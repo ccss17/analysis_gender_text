@@ -15,7 +15,7 @@
 
 - install mecab-ko(https://r2bit.com/bitNLP/articles/Install_mecab.html)
 
-- install `ccss17/bitNLP`
+- install [`ccss17/bitNLP`](https://github.com/ccss17/bitNLP)
 
     ```R
     install.packages("remotes")
