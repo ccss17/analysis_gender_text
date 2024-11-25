@@ -2,7 +2,7 @@
 
 - [dataset](https://drive.google.com/file/d/12tzd1j9a7-kUSGOsMgZn15JbU-dMEq_x/view?usp=sharing): text dataset extracted from images
 - [output](https://drive.google.com/file/d/1nFLe8H_SITwSgUujDENt2dSWNqvBv7Ja/view?usp=sharing): preprocessed dataset
-- [result](https://drive.google.com/file/d/1N2Go7XUhcVyOOhHXaIjkckv1ilMXsY1m/view?usp=sharing): result csv files
+- [result](https://drive.google.com/file/d/1VEBeAsPnRqJ0XZyGWo53sHwxpH6O9ZEX/view?usp=sharing): result csv files
 
 # Installation
 
@@ -86,3 +86,21 @@
 - female distinguished
 
     ![](img/(10,0.1)female_d.png)
+
+## Setting 3(window size: 15, rank weight step: 0.2)
+
+- male
+
+    ![](img/(15,0.2)male.png)
+
+- female
+
+    ![](img/(15,0.2)female.png)
+
+- male distinguished
+
+    ![](img/(15,0.2)male_d.png)
+
+- female distinguished
+
+    ![](img/(15,0.2)female_d.png)

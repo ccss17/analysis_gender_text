@@ -16,7 +16,6 @@ library(stringr)
 library(tm)
 library(bitNLP)
 
-remove_except_kor <- function(x) gsub('[^가-힣|ㄱ-ㅎ|ㅏ-ㅣ]{1,}', ' ', x)
 dirty_word <- 
   c('×같'='좆같', '×까'='좆까', '×나'='좆나', '×되'='좆되', '×밥'='좆밥', 
     '×랄'='지랄', '×발'='씨발', '×끼'='새끼', '×됐'='좆됐', '×새끼'='개새끼', 
@@ -29,6 +28,7 @@ dirty_word <-
 # '나쁜×' = '나쁜놈' or '미친년'
 # '미친×'='미친놈' or '미친년'
 unblind_dirty_word <-function(x) str_replace_all(x, dirty_word)
+remove_except_kor <- function(x) gsub('[^가-힣|ㄱ-ㅎ|ㅏ-ㅣ]{1,}', ' ', x)
 pattern = "(^NNG$|^NNP$|^NNB$|^NNBC$|^NR$|^NP$|^VV$|^VA$|^MM$|^MAG$|^MAJ$|^IC$)"
 morpheme_analysis <- 
   function(x) morpho_mecab(x, pattern = pattern, 
