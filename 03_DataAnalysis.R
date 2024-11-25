@@ -70,7 +70,11 @@ weight_TfDf_Rank <- function (m, normalize = TRUE, doc_wise_weight = NULL)
 
 get_TfDf_rank_score <- function(corpus, table_name, rank_step = 0.2, normalize = TRUE) {
   doc_wise_rank_weight <- function(doc_idx, x) {
-      x * exp(rank_step  * (1 - doc_idx))
+      x * exp(rank_step * (1 - doc_idx))
+      # x * exp(0.2 - 0.2 * 1 = 0)
+      # x * exp(0.2 - 0.2 * 2 = -0.2)
+      # x * exp(0.2 - 0.2 * 3 = -0.4)
+      # x * exp(0.2 - 0.2 * 4 = -0.6)
   }
 
   corpus.TfDf <- corpus %>%
@@ -117,6 +121,9 @@ rank_step <- 0.02
 window_size <- 10
 rank_step <- 0.1
 
+window_size <- 15
+rank_step <- 0.2
+
 ### MALE
 male <- VCorpus(DirSource("output/male"), readerControl=list(language='ko'))
 male_freq_table <- get_freq_table(male, 'male')
@@ -144,10 +151,10 @@ distinguished_male_female %>% head(30)
 
 ### export csv
 dir.create(file.path('result'), recursive = TRUE, showWarnings = FALSE)
-write.csv(conv.df, "result/male_female_freq.csv", row.names=FALSE)
-write.csv(conv_score.df, "result/male_female_score(7,0.02).csv", row.names=FALSE)
+# write.csv(conv.df, "result/male_female_freq.csv", row.names=FALSE)
+write.csv(conv_score.df, "result/(15,0.2)male_female_score.csv", row.names=FALSE)
 write.csv(distinguished_male_female, 
-          "result/male_female_distinguished(7,0.02).csv", row.names=FALSE)
+          "result/(15,0.2)male_female_distinguished.csv", row.names=FALSE)
 
 ##############################################################################
 ### Visualization

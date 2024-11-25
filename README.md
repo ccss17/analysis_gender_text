@@ -86,3 +86,21 @@
 - female distinguished
 
     ![](img/(10,0.1)female_d.png)
+
+## Setting 3(window size: 15, rank weight step: 0.2)
+
+- male
+
+    ![](img/(15,0.2)male.png)
+
+- female
+
+    ![](img/(15,0.2)female.png)
+
+- male distinguished
+
+    ![](img/(15,0.2)male_d.png)
+
+- female distinguished
+
+    ![](img/(15,0.2)female_d.png)

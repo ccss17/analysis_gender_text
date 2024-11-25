@@ -1,7 +1,9 @@
 dataset/
 output/
+result - Copy/
 result/
 result/*.csv
+result/*.html
 *.zip
 __pycache__/
 imgs/
