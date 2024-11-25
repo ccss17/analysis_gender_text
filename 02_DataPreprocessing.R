@@ -5,8 +5,9 @@
 ### Project Goal: To find psychological difference of men and  ###
 ###               women through the analysis of the most       ###
 ###               popular Webtoon by each gender               ###
-### Project Members: Chansol Han (https://github.com/ccss17)   ###
-###                  n L ( )                           ###
+### Project Members: 한찬솔 (https://github.com/ccss17)         ###
+###                  박주은 (https://github.com/zuenbagi01)     ###
+###                  임지훈 (https://github.com/noahlim99)      ###
 ##################################################################
 
 library(magrittr)
