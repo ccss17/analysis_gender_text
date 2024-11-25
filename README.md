@@ -2,7 +2,7 @@
 
 - [dataset](https://drive.google.com/file/d/12tzd1j9a7-kUSGOsMgZn15JbU-dMEq_x/view?usp=sharing): text dataset extracted from images
 - [output](https://drive.google.com/file/d/1nFLe8H_SITwSgUujDENt2dSWNqvBv7Ja/view?usp=sharing): preprocessed dataset
-- [result](https://drive.google.com/file/d/1N2Go7XUhcVyOOhHXaIjkckv1ilMXsY1m/view?usp=sharing): result csv files
+- [result](https://drive.google.com/file/d/1VEBeAsPnRqJ0XZyGWo53sHwxpH6O9ZEX/view?usp=sharing): result csv files
 
 # Installation
 
