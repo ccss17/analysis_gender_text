@@ -117,6 +117,9 @@ rank_step <- 0.02
 window_size <- 10
 rank_step <- 0.1
 
+window_size <- 15
+rank_step <- 0.2
+
 ### MALE
 male <- VCorpus(DirSource("output/male"), readerControl=list(language='ko'))
 male_freq_table <- get_freq_table(male, 'male')
