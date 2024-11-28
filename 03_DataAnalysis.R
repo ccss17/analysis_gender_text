@@ -213,13 +213,13 @@ gender_score_table.15_0.2 <-
 gender_score_table.15_0.2_d <- 
   read.csv('result/(15,0.2)male_female_distinguished.csv')
 
-point_num <- 200
+point_num <- 150
 gender_embedding <- 
   embedding_gender_space(gender_score_table.15_0.2, point_num)
 gender_embedding_d <- 
   embedding_gender_space(gender_score_table.15_0.2_d, point_num)
 
-size <- 6
+size <- 7
 ggplot(gender_embedding, aes(male.score, female.score, label = word)) + 
   geom_text(size = size) +
   theme(axis.text.x=element_blank(),
